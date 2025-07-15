@@ -4,8 +4,8 @@
 
 {% block content %}
     
-{% for post in posts %}
-  <div class="card" style="width: 18rem;">
+
+<div class="card" style="width: 18rem;">
     {% if post.image %}
     <img src="{{ post.image.url }}" class="card-img-top" alt="...">
     {% else %}
@@ -18,7 +18,6 @@
       <a href="/post" class="btn btn-primary">Подробнее</a>
     </div>
   </div>
-{% endfor %}
 
 
 {% endblock %}
